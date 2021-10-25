@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void fun(int n);
+void fun(int n){
+    int j=0;
+    for(int i = 1;i <= n;i++){
+        j = n%i;
+        if(j==0){
+            printf("%d ",i);
+        }
+    }
+}
+int main(){
+    int m ;
+    scanf("%d",&m);
+    fun(m);
+    puts("");
+}
